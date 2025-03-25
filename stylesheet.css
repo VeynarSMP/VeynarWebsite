@@ -8,15 +8,15 @@
 body {
     background-color: black;
 }
-/* Css For Upper */
 
+/* Css For Upper */
 .upper {
     position: relative;
     height: 100vh;
     margin: 0;
-  }
+}
   
-  .upper::before {
+.upper::before {
     content: '';
     position: absolute;
     top: 0;
@@ -28,10 +28,9 @@ body {
     background-position: center center;
     opacity: 0.3; 
     z-index: -1;
-  }
+}
 
 /* Css for nav */
-
 .navbar {
   position: fixed;
   display: flex;
@@ -50,22 +49,18 @@ body {
   font-size: 24px;
   font-weight: bold;
   padding-left: 10px;
-
 }
 .navbar .logo img {
   height: 40px;
   width: 40px;
 }
-
 .nav-links {
   list-style-type: none;
   display: flex;
 }
-
 .nav-links li {
   margin-left: 20px;
 }
-
 .nav-links a {
   color: white;
   text-decoration: none;
@@ -73,26 +68,22 @@ body {
   padding: 10px 15px;
   transition: background-color 0.3s ease;
 }
-
 .nav-links a:hover {
   background-color: #555;
   border-radius: 5px;
 }
 
 /* Css for container */
-
 .Vpict {
     display: flex;
     justify-content: center;
     padding-top: 100px;
     margin-bottom: 50px;
 }
-
 .Vpict img {
     height: 100px;
     width: 100px;
 }
-
 .uppertext {
     display: flex;
     justify-content: center;
@@ -151,7 +142,7 @@ body {
     margin: 0;
 }
   
-  .mider::before {
+.mider::before {
     content: '';
     position: absolute;
     top: 0;
@@ -169,21 +160,7 @@ body {
     flex-direction: row;
     justify-content: space-evenly;
 }
-.stat .case1 {
-    padding: 30px;
-    color: white;
-    border: 1px solid black;
-    border-radius: 15px;
-    text-align: center;
-}
-.stat .case2 {
-    padding: 30px;
-    color: white;
-    border: 1px solid black;
-    border-radius: 15px;
-    text-align: center;
-}
-.stat .case3 {
+.stat .case1, .stat .case2, .stat .case3 {
     padding: 30px;
     color: white;
     border: 1px solid black;
@@ -193,11 +170,11 @@ body {
 .faq {
     margin-left: 80px;
     color: white;
+    font-family: sans-serif;
 }
 .faqcase {
     width: 450px;
     margin-bottom: 10px;
-    /* background-color: #000000; */
     border: 2px solid white;
     padding: 15px;
     border-radius: 5px;
@@ -221,6 +198,99 @@ body {
     transform: rotate(180deg);
 }
 .faqanswer {
+    display: none;
+    margin-top: 10px;
+}
+.mider-2 {
+    position: relative;
+    height: 100vh;
+    margin: 0;
+}
+  
+.mider-2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('https://github.com/VeynarSMP/VeynarWebsite/blob/main/picture/bg3.jpg?raw=true');
+    background-size: cover;
+    background-position: center center;
+    opacity: 0.3; 
+    z-index: -1;
+}
+.newshead {
+    display: flex;
+    justify-content: center;
+}
+.news {
+    /* margin-left: 80px; */
+    color: white;
+    font-family: sans-serif;
+}
+.newscase {
+    width: 600px;
+    margin-bottom: 10px;
+    border: 2px solid white;
+    padding: 15px;
+    border-radius: 5px;
+    position: relative;
+}
+.newsinfo {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: color 0.2s ;
+}
+.newsinfo:hover {
+    color: cyan;
+}
+.newsinfo img {
+    width: 20px;
+    transition: transform 0.5s;
+}
+.newsinfo img.up {
+    transform: rotate(180deg);
+}
+.newspoint {
+    display: none;
+    margin-top: 10px;
+}
+.case {
+    gap: 30px;
+    /* border: 2px solid white; */
+    display: flex;
+    padding-top: 15px;
+    justify-content: center;
+}
+.patch {
+    width: 600px;
+    margin-bottom: 10px;
+    border: 2px solid white;
+    padding: 15px;
+    border-radius: 5px;
+    position: relative;
+}
+.patchinfo {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: color 0.2s ;
+}
+.patchinfo:hover {
+    color: cyan;
+}
+.patchinfo img {
+    width: 20px;
+    transition: transform 0.5s;
+}
+.patchinfo img.up {
+    transform: rotate(180deg);
+}
+.patchpoint {
     display: none;
     margin-top: 10px;
 }
